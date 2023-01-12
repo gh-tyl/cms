@@ -1,6 +1,6 @@
 function FriendsCompo(props) {
-	let num1 = 10;
-	let num2 = 0;
+	// let num1 = 10;
+	// let num2 = 0;
 	const peopleDetails = props.peopleDetails
 	console.log(peopleDetails)
 	return (
@@ -27,8 +27,8 @@ function FriendsCompo(props) {
 				</thead>
 				<tbody>
 					{peopleDetails.map((peopleDetail, index) => (
-						console.log(Object.keys(peopleDetail)),
 						<tr key={index} >
+							{console.log(Object.keys(peopleDetail))}
 							{
 								Object.keys(peopleDetail).map((key, index) => (
 									<td key={index}>{peopleDetail[key]}</td>
